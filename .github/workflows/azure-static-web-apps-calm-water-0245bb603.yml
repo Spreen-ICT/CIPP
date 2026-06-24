@@ -4,10 +4,13 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - main
+# Comment out due to Auto-Update according to: https://docs.cipp.app/setup/maintaining-cipp/configuring-automatic-updates
+# Action done by David @ Spreen ICT at 25 - 6 00:54
+
+#  pull_request:
+#    types: [opened, synchronize, reopened, closed]
+#    branches:
+#      - main
 
 jobs:
   build_and_deploy_job:
